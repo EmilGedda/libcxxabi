@@ -16,6 +16,9 @@
 #include <cstdlib> // for malloc, calloc, free
 #include <cstring> // for memset
 
+// hack for now
+extern int posix_memalign(void **memptr, size_t alignment, size_t size);
+
 //  A small, simple heap manager based (loosely) on
 //  the startup heap manager from FreeBSD, optimized for space.
 //
